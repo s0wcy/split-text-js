@@ -1,0 +1,28 @@
+{
+  "name": "split-text",
+  "version": "1.0.0",
+  "description": "Javascript text splitter for easy and seo friendly animations, allows text, word, spaces and special characters splitting.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaucySpray/split-text.git"
+  },
+  "keywords": [
+    "split-text",
+    "split text",
+    "text",
+    "text splitter",
+    "javascript",
+    "seo",
+    "seo friendly",
+  ],
+  "author": "Alexandre Chabeau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaucySpray/split-text/issues"
+  },
+  "homepage": "https://github.com/SaucySpray/split-text#readme"
+}
