@@ -1,6 +1,6 @@
 {
   "name": "split-text-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript text splitter for easy and seo friendly animations, allows text, word, spaces and special characters splitting.",
   "main": "index.js",
   "scripts": {
