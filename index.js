@@ -2,16 +2,16 @@
  * Author: Alexandre Chabeau
  * License: MIT
  * Contact: alexandrechabeau.pro@gmail.com
- * Original repos: https://github.com/saucyspray/split-text
+ * Original repos: https://github.com/saucyspray/split-text-js
  */
 class SplitTextJS {
     constructor(_target) {
         this.result = new Object()
         this.result.originalText = _target.innerText
         this.result.splitted = this.split(_target)
-        this.result.words = this.result.splitted.querySelectorAll('.wrapper')
-        this.result.chars = this.result.splitted.querySelectorAll('.char')
-        this.result.spaces = this.result.splitted.querySelectorAll('.spacer')
+        this.result.words = this.result.splitted.getElementsByClassName('.SplitTextJS-wrapper')
+        this.result.chars = this.result.splitted.getElementsByClassName('.SplitTextJS-char')
+        this.result.spaces = this.result.splitted.getElementsByClassName('.SplitTextJS-spacer')
         return this.result
     }
     createSpan(_class) {
@@ -25,16 +25,16 @@ class SplitTextJS {
         const splittedTarget = _target.innerText.split(' ')
         let counter = splittedTarget.length
         splittedTarget.map(word => {
-            const wrapper = this.createSpan('wrapper')
+            const wrapper = this.createSpan('SplitTextJS-wrapper')
             word.split(/(?!^)/).map(char => {
-                let el = this.createSpan('char')
+                let el = this.createSpan('SplitTextJS-char')
                 el.innerText = char
                 wrapper.appendChild(el)
             })
             counter--
             containerArray.push(wrapper)
             if (counter > 0) {
-                let space = this.createSpan('char spacer')
+                let space = this.createSpan('SplitTextJS-char SplitTextJS-spacer')
                 space.innerHTML = '&nbsp;'
                 containerArray.push(space)
             }
