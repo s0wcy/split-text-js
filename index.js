@@ -4,7 +4,7 @@
  * Contact: alexandrechabeau.pro@gmail.com
  * Original repos: https://github.com/saucyspray/split-text
  */
-class SplitText {
+class SplitTextJS {
     constructor(_target) {
         this.result = new Object()
         this.result.originalText = _target.innerText
@@ -46,4 +46,4 @@ class SplitText {
         return _target
     }
 }
-module.exports = SplitText;
+module.exports = SplitTextJS;
