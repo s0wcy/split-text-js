@@ -13,7 +13,7 @@ This Javascript text splitter has been created to allow easy and seo friendly te
 
 ### Usage ###
 
-Download the [minified file](http://threejs.org/build/three.min.js) and include it in your HTML
+Download the [file](https://registry.npmjs.org/split-text-js/-/split-text-js-1.0.2.tgz) and include it in your HTML
 ```html
 <p class="text">This is my cool text!</p>
 
@@ -50,16 +50,16 @@ const splittedText = new SplitTextJS(text);
 // Now you can access your splitted text in the returned object
 
 // Acces words :
-const textWords = splittedText.words
+const textWords = splittedText.words;
 
 // Acces letters :
-const textChars = splittedText.chars
+const textChars = splittedText.chars;
 
 // Acces spaces :
-const textSpaces = splittedText.spaces
+const textSpaces = splittedText.spaces;
 
 // Acces original text :
-const textOriginal = splittedText.originalText
+const textOriginal = splittedText.originalText;
 ```
 
 If everything went well you should see [this](https://codesandbox.io/s/split-text-js-fkr7b).

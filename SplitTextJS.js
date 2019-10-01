@@ -9,9 +9,9 @@ class SplitTextJS {
         this.result = new Object()
         this.result.originalText = _target.innerText
         this.result.splitted = this.split(_target)
-        this.result.words = this.result.splitted.getElementsByClassName('.SplitTextJS-wrapper')
-        this.result.chars = this.result.splitted.getElementsByClassName('.SplitTextJS-char')
-        this.result.spaces = this.result.splitted.getElementsByClassName('.SplitTextJS-spacer')
+        this.result.words = this.result.splitted.querySelectorAll('.SplitTextJS-wrapper')
+        this.result.chars = this.result.splitted.querySelectorAll('.SplitTextJS-char')
+        this.result.spaces = this.result.splitted.querySelectorAll('.SplitTextJS-spacer')
         return this.result
     }
     createSpan(_class) {
